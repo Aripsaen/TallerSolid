@@ -1,0 +1,30 @@
+package isp;
+
+import com.github.bsferreira.solid.isp.SolucionDiego.violation.RadioSwitches;
+import com.github.bsferreira.solid.isp.SolucionDiego.violation.Vehicle;
+
+/**
+ * Created by bsferreira on 10-04-2016.
+ */
+public class Car extends Vehicle implements RadioSwitches {
+
+    private boolean radioOn;
+
+    public boolean isRadioOn() {
+        return radioOn;
+    }
+
+    @Override
+    public void turnRadioOn() {
+        radioOn = true;
+    }
+
+    @Override
+    public void turnRadioOff() {
+
+        radioOn = false;
+    }
+
+
+
+}
